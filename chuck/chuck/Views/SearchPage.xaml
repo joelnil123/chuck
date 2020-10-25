@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:chuck"
+             x:Class="chuck.SearchPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+    <!--<Image Source="{local:ImageResource chuck.images.FavStar.png}"/>-->
+
+        <Entry x:Name="SearchText" Text="{Binding SearchString}" Placeholder="Enter Joke to search for"/>
+        <Button BackgroundColor="White" TextColor="Black" Clicked="Search_button3" Text="Search for a joke"/>
+      
+        <CollectionView x:Name="jokes2" ItemsSource="{Binding AllSearchedJokesList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                        <Frame>
+                    <StackLayout>
+                        <Image Source="{Binding icon_url}"/>
+                            <Label FontSize="Medium" Text="{Binding value}"/>
+                        <CheckBox IsChecked="{Binding IsFavoJoke, Mode=TwoWay}"/>
+                    </StackLayout>
+                        </Frame>
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Label FontSize="Medium" Text="your favorite jokes are here"/>
+        <CollectionView x:Name="favList" ItemsSource="{Binding favJokes}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate >
+                    <StackLayout>
+                        <Frame>
+                            <Label Margin="5" Text="{Binding value}"/>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

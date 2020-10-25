@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:chuck.Services"
+             x:Class="chuck.Views.JokesPage"
+             Title="{Binding Catagori} "
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Large" Text="{Binding Joke}" FontFamily="Italic" Padding="25"/>
+            <Label Text="add jokes to favorite checkbox" HorizontalTextAlignment="Center"/>
+
+            <CheckBox x:Name="Box" IsChecked="{Binding IsFavoJoke, Mode=TwoWay}" CheckedChanged="OnCheckBoxCheckedChanged" HorizontalOptions="Center"/>
+            <Button TextColor="Black" FontSize="22" BackgroundColor="White" Text="get another joke" Clicked="NewButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
