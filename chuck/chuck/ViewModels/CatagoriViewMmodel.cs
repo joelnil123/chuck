@@ -46,7 +46,7 @@ namespace chuck.Services
             {
                 Catagori myCatagories = new Catagori
                 {
-                    CataborieNames = item.ToString()
+                    CatagorieName = item.ToString()
                 };
                 allCatagories.Add(myCatagories);
             }     
@@ -59,7 +59,7 @@ namespace chuck.Services
             Joke = jokesObject.value;
             return JokesFromSearch;
         }
-
+        //fytta till rätt vymodel
         public bool EditeFavList(bool AdToFavYesOrNo)
         {
             if (AdToFavYesOrNo)

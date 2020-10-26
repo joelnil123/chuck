@@ -14,7 +14,7 @@
         <CollectionView x:Name="CatagorieListWiev" ItemsSource="{Binding allCatagories}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Button BackgroundColor="White" TextColor="Black" BorderWidth="2" Text="{Binding CataborieNames}" Clicked="GetJokeFromCatagorie"/>
+                    <Button BackgroundColor="White" TextColor="Black" BorderWidth="2" Text="{Binding CatagorieName}" Clicked="GetJokeFromCatagorie"/>
                 </DataTemplate>
 
             </CollectionView.ItemTemplate>

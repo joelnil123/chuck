@@ -10,5 +10,6 @@ namespace chuck.ViewModels
     public class JokesViewModel : BaseViewModel
     {
 
+
     }
 }

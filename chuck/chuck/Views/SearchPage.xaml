@@ -35,11 +35,11 @@
         <CollectionView x:Name="favList" ItemsSource="{Binding favJokes}">
             <CollectionView.ItemTemplate>
                 <DataTemplate >
-                    <StackLayout>
                         <Frame>
+                    <StackLayout>
                             <Label Margin="5" Text="{Binding value}"/>
-                        </Frame>
                     </StackLayout>
+                        </Frame>
                 </DataTemplate>
 
             </CollectionView.ItemTemplate>

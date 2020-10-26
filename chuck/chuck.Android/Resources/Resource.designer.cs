@@ -8381,6 +8381,9 @@ namespace chuck.Droid
 			// aapt resource value: 0x7F07007C
 			public const int YellowFavStar = 2131165308;
 			
+			// aapt resource value: 0x7F07007D
+			public const int YellowStar = 2131165309;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -9354,6 +9357,9 @@ namespace chuck.Droid
 			
 			// aapt resource value: 0x7F0C0005
 			public const int launcher_foreground = 2131492869;
+			
+			// aapt resource value: 0x7F0C0006
+			public const int YellowStar = 2131492870;
 			
 			static Mipmap()
 			{

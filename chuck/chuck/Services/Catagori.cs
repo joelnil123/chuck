@@ -7,6 +7,6 @@ namespace chuck.Services
 {
     public class Catagori
     {
-        public string CataborieNames { get; set; }
+        public string CatagorieName { get; set; }
     }
 }
